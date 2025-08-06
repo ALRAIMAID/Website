@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alraimaids.com/sitemap.xml
