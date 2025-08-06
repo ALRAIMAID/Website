@@ -452,5 +452,111 @@ document.getElementById('langSwitch').onclick = function() {
 #prevSlide { left: 10px; }
 #nextSlide { right: 10px; }
 </style>
+/* Responsive layout for mobile devices */
+@media (max-width: 900px) {
+  body, .section, .hero, header, nav, .service-cards, .testimonial-cards, .contact-form, .slider {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    box-sizing: border-box;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 8px;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+  nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  nav a {
+    margin: 0 4px;
+    font-size: 1em;
+  }
+  .hero {
+    min-height: 40vh;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .hero h1 {
+    font-size: 1.5em;
+    max-width: 100%;
+  }
+  .hero p {
+    font-size: 1em;
+    max-width: 100%;
+  }
+  .service-cards, .testimonial-cards {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+  .card {
+    width: 100% !important;
+    min-width: 0;
+    margin-bottom: 12px;
+  }
+  .slider {
+    max-width: 100vw;
+    margin: 24px auto 0 auto;
+  }
+  .slider img {
+    border-radius: 8px;
+  }
+  .slider-btn {
+    padding: 6px 12px;
+    font-size: 1em;
+  }
+  .contact-form {
+    max-width: 100vw;
+    padding: 16px 8px;
+  }
+  .form-group {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1em;
+    padding: 10px;
+  }
+  footer {
+    padding: 12px 8px;
+    font-size: 0.95em;
+  }
+  .logo img {
+    height: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .note {
+    font-size: 0.95em;
+  }
+}
+
+/* Make buttons and inputs more touch-friendly */
+.btn, .slider-btn {
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1em;
+  border-radius: 8px;
+}
+
+/* Ensure images are responsive */
+img, .service-icon {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
 
 
